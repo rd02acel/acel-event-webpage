@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $('#nav-bar').addClass('disabled');
+
     var isMac = navigator.platform.toUpperCase().indexOf('MAC')!==-1;
     var isIPHONE = navigator.platform.toUpperCase().indexOf('IPHONE')!==-1;
     console.log("navigator.platform:"+navigator.platform);
@@ -8,12 +9,33 @@ $(document).ready(function(){
     }else{
         $('#d1').removeClass('disabled');
     }
-
     $('#introVideo').get(0).play()
+
+    var islandscape = true;
+    if(window.innerHeight > window.innerWidth){
+        //portrait
+        $("#d1").addClass('disabled');
+        $("#d2").addClass('disabled');
+        $("#d3").addClass('disabled');
+        $("#d4").addClass('disabled');
+        $("#d5").addClass('disabled');
+        $("#d6").addClass('disabled');
+        $("#d7").addClass('disabled');
+        $("#nav-bar").addClass('disabled');
+        islandscape=false;
+
+
+    }
+    if(window.innerWidth > window.innerHeight){
+        //landscape
+        $("#dL1").addClass('disabled');
+    }
+    
+
     $(window).scroll(function (){
         var scroll = $(window).scrollTop();
 
-        if (scroll >=20) {
+        if (scroll >=20 && islandscape) {
             $('#nav-bar').removeClass('disabled');
 
         }
@@ -28,7 +50,19 @@ $(document).ready(function(){
     
     $("#orderbtn").click(function(event){
         event.preventDefault();
-        window.location = "https://www.acelpower.com/products/";    
+        var email = 'stephen.p@acelpower.com';
+        var subject = 'Boat Inquires';
+        var emailBody = 'Hi, I am interested in the 50/75HP boat.';
+        window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
+        // window.location = "https://www.acelpower.com/products/";    
+    });
+    $("#orderbtn2").click(function(event){
+        event.preventDefault();
+        var email = 'stephen.p@acelpower.com';
+        var subject = 'Boat Inquires';
+        var emailBody = 'Hi, I am interested in the 50/75HP boat.';
+        window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
+        // window.location = "https://www.acelpower.com/products/";    
     });
 
     $("#d5btnPrev").click(function(){

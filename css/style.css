@@ -1,7 +1,12 @@
 body {
     font-family: 'Open Sans';
 }
-html,body{ overflow-x: hidden; }
+
+html,
+body {
+    overflow-x: hidden;
+}
+
 .fs-tab {
     max-width: 100%;
     width: 100%;
@@ -16,117 +21,142 @@ html,body{ overflow-x: hidden; }
     background: url("../res/2/Vector.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-position: 0 40vmin;
+    background-position: 0 35vmin;
 }
-#d2{
+
+#d2 {
     background-color: black;
 }
 
 #p2-2 {
     margin: 0 0 0 0;
-    position:absolute;
-    top: 15%;
+    position: absolute;
+    top: 25%;
     left: 50%;
-    transform:  translate(-50%) scale(.8);
+    transform: translate(-50%) scale(.9);
     /* transform: translate(-50%); */
 }
+
 #p2-3 {
     margin: 0 0 0 0;
     font-weight: bold;
-    position:absolute;
-    color:azure;
-    font-size: 3vmin;
+    position: absolute;
+    color: azure;
+    font-size: 2vmin;
     top: 20%;
     left: 25%;
-    transform:  translate(-50%);
+    transform: translate(-50%);
     /* transform: translate(-50%); */
 }
+
 #p2-4 {
     margin: 0 0 0 0;
-    position:absolute;
-    color:azure;
-    font-size: 3vmin;
+    position: absolute;
+    color: azure;
+    font-size: 2vmin;
     top: 45%;
     left: 25%;
-    transform:  translate(-50%);
+    transform: translate(-50%);
     /* transform: translate(-50%); */
 }
+
 #p2-5 {
     margin: 0 0 0 0;
     font-weight: bold;
-    position:absolute;
-    color:azure;
+    position: absolute;
+    color: azure;
     font-size: 3vmin;
     top: 20%;
     left: 75%;
-    transform:  translate(-50%);
+    transform: translate(-50%);
     white-space: nowrap;
     /* transform: translate(-50%); */
 }
+
 #p2-6 {
     margin: 0 0 0 0;
-    position:absolute;
-    color:azure;
+    position: absolute;
+    color: azure;
     font-size: 3vmin;
     top: 45%;
     left: 75%;
-    transform:  translate(-50%);
+    transform: translate(-50%);
     white-space: nowrap;
     /* transform: translate(-50%); */
 }
 
 
-#d5{
+#d5 {
     background-color: black;
 }
-#orderbtn:hover{
-    background-color:white !important;
-    color:black !important;
+
+#orderbtn:hover {
+    background-color: white !important;
+    color: black !important;
     box-shadow: 5px 5px 2px lightblue;
 }
-#d6btn50:hover{
-    background-color:white !important;
-    color:black !important;
+
+#d6btn50:hover {
+    background-color: white !important;
+    color: black !important;
     box-shadow: 5px 5px 2px lightblue;
 }
-#d6btn75:hover{
-    background-color:white !important;
-    color:black !important;
+
+#d6btn75:hover {
+    background-color: white !important;
+    color: black !important;
     box-shadow: 5px 5px 2px lightblue;
 }
-#d6btn150:hover{
-    background-color:white !important;
-    color:black !important;
+
+#d6btn150:hover {
+    background-color: white !important;
+    color: black !important;
     box-shadow: 5px 5px 2px lightblue;
 }
-#d6btn250:hover{
-    background-color:white !important;
-    color:black !important;
+
+#d6btn250:hover {
+    background-color: white !important;
+    color: black !important;
     box-shadow: 5px 5px 2px lightblue;
 }
-.disabled{
+
+.disabled {
     display: none;
 }
-.nowrap{
+
+.nowrap {
     white-space: nowrap;
     text-shadow: 2px 2px 2px black;
     /* position:absolute; */
     /* top: 30%; */
     /* transform: translate(30%); */
 }
+
 a {
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
-.acelhover{
+
+.acelhover {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
     height: 100%;
 }
+
+.acelFlexBox {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: 100%;
+    /* transform:  translate(0 -50%); */
+}
+
 .acelhover:hover {
     background-color: rgb(4, 39, 4);
     text-decoration: underline;
@@ -137,12 +167,92 @@ a:hover {
 }
 
 /* for all screens */
-#info {display: none;}
+#info {
+    display: none;
+}
 
 /* only when orientation is in portrait mode */
 @media all and (orientation:portrait) {
     #info {
         /* background-color:rgba(19, 13, 58, 0.425); */
-         display: block;
+        display: none;
     }
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #p2-11 {color:white; font-size:2vmin;    position: absolute; left:20%;top:15px;}
+    #p2-12 {color:white; font-size:2vmin;    position: absolute; left:20%;top:30px;}
+    #p2-13 {color:white; font-size:1.5vmin;  position: absolute; left:20%;top:40px;}
+    #p2-14 {color:white; font-size:2vmin;    position: absolute; left:52%;top:15px;}
+    #p2-15 {color:white; font-size:2vmin;    position: absolute; left:52%;top:30px;}
+    #p2-16 {color:white; font-size:1.5vmin;  position: absolute; left:52%;top:40px;}
+
+    #p7-1 {color:white; font-size:2vmin;    position: absolute; left:9%;top:5px;}
+    #p7-2 {color:white; font-size:1.5vmin;    position: absolute; left:9%;top:20px;}
+    #p7-3 {color:white; font-size:2vmin;    position: absolute; left:57.5%;top:5px;}
+    #p7-4 {color:white; font-size:1.5vmin;    position: absolute; left:57.5%;top:20px;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #p2-11 {color:white; font-size:2vmin;    position: absolute; left:20%;top:15px;}
+    #p2-12 {color:white; font-size:2vmin;    position: absolute; left:20%;top:35px;}
+    #p2-13 {color:white; font-size:1.5vmin;  position: absolute; left:20%;top:50px;}
+    #p2-14 {color:white; font-size:2vmin;    position: absolute; left:52%;top:15px;}
+    #p2-15 {color:white; font-size:2vmin;    position: absolute; left:52%;top:35px;}
+    #p2-16 {color:white; font-size:1.5vmin;  position: absolute; left:52%;top:50px;}
+
+    #p7-1 {color:white; font-size:2vmin;    position: absolute; left:9%;top:5px;}
+    #p7-2 {color:white; font-size:1.5vmin;    position: absolute; left:9%;top:25px;}
+    #p7-3 {color:white; font-size:2vmin;    position: absolute; left:57.5%;top:5px;}
+    #p7-4 {color:white; font-size:1.5vmin;    position: absolute; left:57.5%;top:25px;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #p2-11 {color:white; font-size:2vmin;    position: absolute; left:20%;top:15px;}
+    #p2-12 {color:white; font-size:2vmin;    position: absolute; left:20%;top:40px;}
+    #p2-13 {color:white; font-size:1.5vmin;  position: absolute; left:20%;top:60px;}
+    #p2-14 {color:white; font-size:2vmin;    position: absolute; left:52%;top:15px;}
+    #p2-15 {color:white; font-size:2vmin;    position: absolute; left:52%;top:40px;}
+    #p2-16 {color:white; font-size:1.5vmin;  position: absolute; left:52%;top:60px;}
+
+    #p7-1 {color:white; font-size:20px;    position: absolute; left:9%;top:10px;}
+    #p7-2 {color:white; font-size:15px;    position: absolute; left:9%;top:35px;}
+    #p7-3 {color:white; font-size:20px;    position: absolute; left:57.5%;top:10px;}
+    #p7-4 {color:white; font-size:15px;    position: absolute; left:57.5%;top:35px;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #p2-11 {color:white; font-size:2vmin;    position: absolute; left:27%;top:10px;}
+    #p2-12 {color:white; font-size:2vmin;    position: absolute; left:27%;top:45px;}
+    #p2-13 {color:white; font-size:1.5vmin;  position: absolute; left:27%;top:60px;}
+    #p2-14 {color:white; font-size:2vmin;    position: absolute; left:52%;top:10px;}
+    #p2-15 {color:white; font-size:2vmin;    position: absolute; left:52%;top:45px;}
+    #p2-16 {color:white; font-size:1.5vmin;  position: absolute; left:52%;top:60px;}
+
+    #p7-1 {color:white; font-size:20px;    position: absolute; left:9%;top:10px;}
+    #p7-2 {color:white; font-size:15px;    position: absolute; left:9%;top:35px;}
+    #p7-3 {color:white; font-size:20px;    position: absolute; left:57.5%;top:10px;}
+    #p7-4 {color:white; font-size:15px;    position: absolute; left:57.5%;top:35px;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #p2-11 {color:white; font-size:3vmin;    position: absolute; left:27%;top:20px;}
+    #p2-12 {color:white; font-size:3vmin;    position: absolute; left:27%;top:70px;}
+    #p2-13 {color:white; font-size:2.5vmin;  position: absolute; left:27%;top:100px;}
+    #p2-14 {color:white; font-size:3vmin;    position: absolute; left:52%;top:20px;}
+    #p2-15 {color:white; font-size:3vmin;    position: absolute; left:52%;top:70px;}
+    #p2-16 {color:white; font-size:2.5vmin;  position: absolute; left:52%;top:100px;}
+
+    #p7-1 {color:white; font-size:20px;    position: absolute; left:9%;top:10px;}
+    #p7-2 {color:white; font-size:15px;    position: absolute; left:9%;top:35px;}
+    #p7-3 {color:white; font-size:20px;    position: absolute; left:57.5%;top:10px;}
+    #p7-4 {color:white; font-size:15px;    position: absolute; left:57.5%;top:35px;}
 }
