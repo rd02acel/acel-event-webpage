@@ -1,0 +1,140 @@
+.fs-tab {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    /* overflow: clip; */
+    /* overflow: hidden;  */
+    position: relative;
+}
+
+.curve {
+    width: 100%;
+    background: url("../res/2/Vector.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 0 40vmin;
+}
+#d2{
+    background-color: black;
+}
+
+#p2-2 {
+    margin: 0 0 0 0;
+    position:absolute;
+    top: 15%;
+    left: 50%;
+    transform:  translate(-50%) scale(.8);
+    /* transform: translate(-50%); */
+}
+#p2-3 {
+    margin: 0 0 0 0;
+    font-weight: bold;
+    position:absolute;
+    color:azure;
+    font-size: 3vmin;
+    top: 20%;
+    left: 25%;
+    transform:  translate(-50%);
+    /* transform: translate(-50%); */
+}
+#p2-4 {
+    margin: 0 0 0 0;
+    position:absolute;
+    color:azure;
+    font-size: 3vmin;
+    top: 45%;
+    left: 25%;
+    transform:  translate(-50%);
+    /* transform: translate(-50%); */
+}
+#p2-5 {
+    margin: 0 0 0 0;
+    font-weight: bold;
+    position:absolute;
+    color:azure;
+    font-size: 3vmin;
+    top: 20%;
+    left: 75%;
+    transform:  translate(-50%);
+    white-space: nowrap;
+    /* transform: translate(-50%); */
+}
+#p2-6 {
+    margin: 0 0 0 0;
+    position:absolute;
+    color:azure;
+    font-size: 3vmin;
+    top: 45%;
+    left: 75%;
+    transform:  translate(-50%);
+    white-space: nowrap;
+    /* transform: translate(-50%); */
+}
+
+
+#d5{
+    background-color: black;
+}
+#orderbtn:hover{
+    background-color:white !important;
+    color:black !important;
+    box-shadow: 5px 5px 2px lightblue;
+}
+#d6btn50:hover{
+    background-color:white !important;
+    color:black !important;
+    box-shadow: 5px 5px 2px lightblue;
+}
+#d6btn75:hover{
+    background-color:white !important;
+    color:black !important;
+    box-shadow: 5px 5px 2px lightblue;
+}
+#d6btn150:hover{
+    background-color:white !important;
+    color:black !important;
+    box-shadow: 5px 5px 2px lightblue;
+}
+#d6btn250:hover{
+    background-color:white !important;
+    color:black !important;
+    box-shadow: 5px 5px 2px lightblue;
+}
+.disabled{
+    display: none;
+}
+.nowrap{
+    white-space: nowrap;
+    text-shadow: 2px 2px 2px black;
+    /* position:absolute; */
+    /* top: 30%; */
+    /* transform: translate(30%); */
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.acelhover{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.acelhover:hover {
+    background-color: rgb(4, 39, 4);
+    text-decoration: underline;
+}
+
+/* for all screens */
+#info {display: none;}
+
+/* only when orientation is in portrait mode */
+@media all and (orientation:portrait) {
+    #info {
+        background-color:rgba(19, 13, 58, 0.425);
+         display: block;
+    }
+}
