@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $('#nav-bar').addClass('disabled');
+    $('#introVideo').get(0).play()
     $(window).scroll(function (){
         var scroll = $(window).scrollTop();
 
