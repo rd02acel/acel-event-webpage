@@ -1,15 +1,7 @@
 $(document).ready(function(){
     $('#nav-bar').addClass('disabled');
 
-    var isMac = navigator.platform.toUpperCase().indexOf('MAC')!==-1;
-    var isIPHONE = navigator.platform.toUpperCase().indexOf('IPHONE')!==-1;
-    console.log("navigator.platform:"+navigator.platform);
-    if( isMac||isIPHONE ){
-        $('#d1-mac').removeClass('disabled');
-    }else{
-        $('#d1').removeClass('disabled');
-    }
-    $('#introVideo').get(0).play()
+
 
     var islandscape = true;
 
@@ -45,6 +37,18 @@ $(document).ready(function(){
             $("#d5").removeClass('disabled');
             $("#d6").removeClass('disabled');
             $("#d7").removeClass('disabled');
+            
+
+            var isMac = navigator.platform.toUpperCase().indexOf('MAC')!==-1;
+            var isIPHONE = navigator.platform.toUpperCase().indexOf('IPHONE')!==-1;
+            console.log("navigator.platform:"+navigator.platform);
+            if( isMac||isIPHONE ){
+                $('#d1-mac').removeClass('disabled');
+            }else{
+                $('#d1').removeClass('disabled');
+            }
+            $('#introVideo').get(0).play()
+
             islandscape=true;
         }
     }
