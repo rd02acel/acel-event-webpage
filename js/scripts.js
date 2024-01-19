@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+    $('#nav-bar').addClass('disabled');
     $(window).scroll(function (){
         var scroll = $(window).scrollTop();
 
