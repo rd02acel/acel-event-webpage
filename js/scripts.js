@@ -18,7 +18,7 @@ $(document).ready(function(){
     
     $("#orderbtn").click(function(event){
         event.preventDefault();
-        window.location = "http://www.google.com/";    
+        window.location = "https://www.acelpower.com/products/";    
     });
 
     $("#d5btnPrev").click(function(){
