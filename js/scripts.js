@@ -24,11 +24,24 @@ $(document).ready(function(){
             $("#nav-bar").addClass('disabled');
 
             $('#dL1').removeClass('disabled');
+            $("#dL2").removeClass('disabled');
+            $("#dL3").removeClass('disabled');
+            $("#dL4").removeClass('disabled');
+            $("#dL5").removeClass('disabled');
+            $("#dL6").removeClass('disabled');
+            $("#dL7").removeClass('disabled');
             islandscape=false;
         }
         if(window.innerWidth > window.innerHeight){
             //landscape
             $("#dL1").addClass('disabled');
+            $("#dL2").addClass('disabled');
+            $("#dL3").addClass('disabled');
+            $("#dL4").addClass('disabled');
+            $("#dL5").addClass('disabled');
+            $("#dL6").addClass('disabled');
+            $("#dL7").addClass('disabled');
+            $("#Lnav-bar").addClass('disabled');
 
             $("#d1").removeClass('disabled');
             $("#d2").removeClass('disabled');
@@ -87,6 +100,37 @@ $(document).ready(function(){
         window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
         // window.location = "https://www.acelpower.com/products/";    
     });
+
+
+    $("#cta-8-1").click(function(event){
+        event.preventDefault();
+        window.location = "https://www.acelpower.com/products/";    
+    });
+    $("#cta-8-2").click(function(event){
+        event.preventDefault();
+        var email = 'john@acelpower.com';
+        var subject = 'Investment Inquires';
+        var emailBody = 'Hi, I am interested in investing ACEL Power Inc.';
+        window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
+        // window.location = "https://www.acelpower.com/products/";    
+    });
+
+    $("#cta-L7-1").click(function(event){
+        event.preventDefault();
+        window.location = "https://www.acelpower.com/products/";    
+    });
+    $("#cta-L7-2").click(function(event){
+        event.preventDefault();
+        var email = 'john@acelpower.com';
+        var subject = 'Investment Inquires';
+        var emailBody = 'Hi, I am interested in investing ACEL Power Inc.';
+        window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
+        // window.location = "https://www.acelpower.com/products/";    
+    });
+
+
+
+
 
     $("#d5btnPrev").click(function(){
         showPrev();
