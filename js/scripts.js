@@ -28,6 +28,7 @@ $(document).ready(function(){
         if(window.innerHeight > window.innerWidth){
             //portrait
             $("#d1").addClass('disabled');
+            $("#d1-mac").addClass('disabled');
             $("#d2").addClass('disabled');
             $("#d3").addClass('disabled');
             $("#d4").addClass('disabled');
