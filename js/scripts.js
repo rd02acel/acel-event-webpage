@@ -5,10 +5,14 @@ $(document).ready(function(){
         event.preventDefault();
     });
 
-    $( window ).on( "load", function() {
-        console.log( "window loaded" );
+    window.addEventListener("load", (event) => {
+        console.log("page is fully loaded");
         $("#loading").addClass('disabled');
-    });
+      });
+    // $( window ).on( "load", function() {
+    //     console.log( "window loaded" );
+    //     $("#loading").addClass('disabled');
+    // });
 
 
 
