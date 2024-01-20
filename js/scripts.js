@@ -1,6 +1,15 @@
 $(document).ready(function(){
     $('#nav-bar').addClass('disabled');
 
+    $('body, html').mousedown(function(event) {
+        event.preventDefault();
+    });
+
+    $( window ).on( "load", function() {
+        console.log( "window loaded" );
+        $("#loading").addClass('disabled');
+    });
+
 
 
     var islandscape = true;
@@ -41,7 +50,6 @@ $(document).ready(function(){
             $("#dL5").addClass('disabled');
             $("#dL6").addClass('disabled');
             $("#dL7").addClass('disabled');
-            $("#Lnav-bar").addClass('disabled');
 
             $("#d1").removeClass('disabled');
             $("#d2").removeClass('disabled');
@@ -68,21 +76,22 @@ $(document).ready(function(){
 
     
 
-    $(window).scroll(function (){
-        var scroll = $(window).scrollTop();
 
-        if (scroll >=20 && islandscape) {
-            $('#nav-bar').removeClass('disabled');
 
-        }
-        else {
-            $('#nav-bar').addClass('disabled');
-        }
-    });
+    // $(window).scroll(function (){
+    //     var scroll = $(window).scrollTop();
 
-    $('body, html').mousedown(function(event) {
-        event.preventDefault();
-    });
+    //     if (scroll >=20 && islandscape) {
+    //         $('#nav-bar').removeClass('disabled');
+
+    //     }
+    //     else {
+    //         $('#nav-bar').addClass('disabled');
+    //     }
+    // });
+
+
+
     
     $("#orderbtn").click(function(event){
         event.preventDefault();
@@ -92,7 +101,7 @@ $(document).ready(function(){
         window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
         // window.location = "https://www.acelpower.com/products/";    
     });
-    $("#orderbtn2").click(function(event){
+    $("#orderbtn-L4").click(function(event){
         event.preventDefault();
         var email = 'stephen.p@acelpower.com';
         var subject = 'Boat Inquires';
@@ -101,12 +110,18 @@ $(document).ready(function(){
         // window.location = "https://www.acelpower.com/products/";    
     });
 
-
-    $("#cta-8-1").click(function(event){
+    $("#btn-L5").click(function(event){
         event.preventDefault();
         window.location = "https://www.acelpower.com/products/";    
     });
-    $("#cta-8-2").click(function(event){
+
+
+
+    $("#cta-7-1").click(function(event){
+        event.preventDefault();
+        window.location = "https://www.acelpower.com/products/";    
+    });
+    $("#cta-7-2").click(function(event){
         event.preventDefault();
         var email = 'john@acelpower.com';
         var subject = 'Investment Inquires';
@@ -127,6 +142,7 @@ $(document).ready(function(){
         window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
         // window.location = "https://www.acelpower.com/products/";    
     });
+
 
 
 
@@ -234,6 +250,8 @@ $(document).ready(function(){
     $('div[id ^= "d5-"]').each(function(index,item){
         console.log($(this).hasClass('disabled'))
     });
+
+
 
     $(".sliding-link").click(function(e) {
         e.preventDefault();
