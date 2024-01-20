@@ -5,10 +5,21 @@ $(document).ready(function(){
         event.preventDefault();
     });
 
+    var id = null;
+    id = setTimeout(() => {
+        console.log("stop loading animation if it takes too long");
+        $("#loading").addClass('disabled');
+    }, 2000);
+
     window.addEventListener("load", (event) => {
         console.log("page is fully loaded");
         $("#loading").addClass('disabled');
-      });
+        if(id != null){
+            clearTimeout(id);
+        }
+    });
+
+
     // $( window ).on( "load", function() {
     //     console.log( "window loaded" );
     //     $("#loading").addClass('disabled');
