@@ -56,15 +56,9 @@ $(document).ready(function(){
             $("#dL6").addClass('disabled');
             $("#dL7").addClass('disabled');
 
-            $("#d1").removeClass('disabled');
-            $("#d2").removeClass('disabled');
-            $("#d3").removeClass('disabled');
-            $("#d4").removeClass('disabled');
-            $("#d5").removeClass('disabled');
-            $("#d6").removeClass('disabled');
-            $("#d7").removeClass('disabled');
-            
 
+            
+            
             var isMac = navigator.platform.toUpperCase().indexOf('MAC')!==-1;
             var isIPHONE = navigator.platform.toUpperCase().indexOf('IPHONE')!==-1;
             console.log("navigator.platform:"+navigator.platform);
@@ -73,7 +67,14 @@ $(document).ready(function(){
             }else{
                 $('#d1').removeClass('disabled');
             }
-            $('#introVideo').get(0).play()
+            $('#introVideo').get(0).play();
+
+            $("#d2").removeClass('disabled');
+            $("#d3").removeClass('disabled');
+            $("#d4").removeClass('disabled');
+            $("#d5").removeClass('disabled');
+            $("#d6").removeClass('disabled');
+            $("#d7").removeClass('disabled');
 
             islandscape=true;
         }
