@@ -115,18 +115,23 @@ $(document).ready(function(){
         var email = 'stephen.p@acelpower.com';
         var subject = 'Boat Inquires';
         var emailBody = 'Hi, I am interested in the 50/75HP boat.';
-        window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
-        // window.location = "https://www.acelpower.com/products/";    
+        // window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
+        window.location = "https://forms.office.com/r/Yu8TmwxnEX";    
     });
     $("#orderbtn-L4").click(function(event){
         event.preventDefault();
         var email = 'stephen.p@acelpower.com';
         var subject = 'Boat Inquires';
         var emailBody = 'Hi, I am interested in the 50/75HP boat.';
-        window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
-        // window.location = "https://www.acelpower.com/products/";    
+        // window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
+        window.location = "https://forms.office.com/r/Yu8TmwxnEX";    
     });
 
+
+    $("#btn-5").click(function(event){
+        event.preventDefault();
+        window.location = "https://www.acelpower.com/products/";    
+    });
     $("#btn-L5").click(function(event){
         event.preventDefault();
         window.location = "https://www.acelpower.com/products/";    
@@ -143,8 +148,8 @@ $(document).ready(function(){
         var email = 'john@acelpower.com';
         var subject = 'Investment Inquires';
         var emailBody = 'Hi, I am interested in investing ACEL Power Inc.';
-        window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
-        // window.location = "https://www.acelpower.com/products/";    
+        // window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
+        window.location = "https://forms.office.com/r/Yu8TmwxnEX";     
     });
 
     $("#cta-L7-1").click(function(event){
@@ -156,8 +161,8 @@ $(document).ready(function(){
         var email = 'john@acelpower.com';
         var subject = 'Investment Inquires';
         var emailBody = 'Hi, I am interested in investing ACEL Power Inc.';
-        window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
-        // window.location = "https://www.acelpower.com/products/";    
+        // window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
+        window.location = "https://forms.office.com/r/Yu8TmwxnEX";     
     });
 
 
@@ -165,12 +170,12 @@ $(document).ready(function(){
 
 
 
-    $("#d5btnPrev").click(function(){
-        showPrev();
-    });
-    $("#d5btnNext").click(function(){
-        showNext();
-    });
+    // $("#d5btnPrev").click(function(){
+    //     showPrev();
+    // });
+    // $("#d5btnNext").click(function(){
+    //     showNext();
+    // });
 
     $("#d6btn50").click(function(event){
         event.preventDefault();
@@ -216,57 +221,57 @@ $(document).ready(function(){
         });
     }
 
-    function disableAll(){
-        $('div[id ^= "d5-"]').each(function(){
-            $(this).addClass('disabled');
-        });
-    }
-    function showPrev(){
-        var divarr = [];
-        $('div[id ^= "d5-"]').each(function(index,item){
-            console.log($(this).hasClass('disabled'))
-            if($(this).hasClass('disabled') == false){
-                divarr.push($(this).attr("id"));
-            }
-        });
-        var target = "#d5-1"
-        if(divarr.length==1){
-            if(divarr[0].includes('1')){ target="#d5-4";}
-            if(divarr[0].includes('2')){ target="#d5-1";}
-            if(divarr[0].includes('3')){ target="#d5-2";}
-            if(divarr[0].includes('4')){ target="#d5-3";}
-            $(divarr[0]).addClass('disabled');
-        }
-        disableAll();
-        console.log("target:"+target);
-        $(target).removeClass('disabled');
-        console.log(divarr);
-    }
-    function showNext(){
-        var divarr = [];
-        $('div[id ^= "d5-"]').each(function(index,item){
-            console.log($(this).hasClass('disabled'))
-            if($(this).hasClass('disabled') == false){
-                divarr.push($(this).attr("id"));
-            }
-        });
-        var target = "#d5-1"
-        if(divarr.length==1){
-            if(divarr[0].includes('1')){ target="#d5-2";}
-            if(divarr[0].includes('2')){ target="#d5-3";}
-            if(divarr[0].includes('3')){ target="#d5-4";}
-            if(divarr[0].includes('4')){ target="#d5-1";}
-            $(divarr[0]).addClass('disabled');
-        }
-        disableAll();
-        console.log("target:"+target);
-        $(target).removeClass('disabled');
-        console.log(divarr);
-    }
+    // function disableAll(){
+    //     $('div[id ^= "d5-"]').each(function(){
+    //         $(this).addClass('disabled');
+    //     });
+    // }
+    // function showPrev(){
+    //     var divarr = [];
+    //     $('div[id ^= "d5-"]').each(function(index,item){
+    //         console.log($(this).hasClass('disabled'))
+    //         if($(this).hasClass('disabled') == false){
+    //             divarr.push($(this).attr("id"));
+    //         }
+    //     });
+    //     var target = "#d5-1"
+    //     if(divarr.length==1){
+    //         if(divarr[0].includes('1')){ target="#d5-4";}
+    //         if(divarr[0].includes('2')){ target="#d5-1";}
+    //         if(divarr[0].includes('3')){ target="#d5-2";}
+    //         if(divarr[0].includes('4')){ target="#d5-3";}
+    //         $(divarr[0]).addClass('disabled');
+    //     }
+    //     disableAll();
+    //     console.log("target:"+target);
+    //     $(target).removeClass('disabled');
+    //     console.log(divarr);
+    // }
+    // function showNext(){
+    //     var divarr = [];
+    //     $('div[id ^= "d5-"]').each(function(index,item){
+    //         console.log($(this).hasClass('disabled'))
+    //         if($(this).hasClass('disabled') == false){
+    //             divarr.push($(this).attr("id"));
+    //         }
+    //     });
+    //     var target = "#d5-1"
+    //     if(divarr.length==1){
+    //         if(divarr[0].includes('1')){ target="#d5-2";}
+    //         if(divarr[0].includes('2')){ target="#d5-3";}
+    //         if(divarr[0].includes('3')){ target="#d5-4";}
+    //         if(divarr[0].includes('4')){ target="#d5-1";}
+    //         $(divarr[0]).addClass('disabled');
+    //     }
+    //     disableAll();
+    //     console.log("target:"+target);
+    //     $(target).removeClass('disabled');
+    //     console.log(divarr);
+    // }
 
-    $('div[id ^= "d5-"]').each(function(index,item){
-        console.log($(this).hasClass('disabled'))
-    });
+    // $('div[id ^= "d5-"]').each(function(index,item){
+    //     console.log($(this).hasClass('disabled'))
+    // });
 
 
 
