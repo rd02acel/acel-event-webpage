@@ -182,7 +182,7 @@ $(document).ready(function(){
         resetcolor();
         $(this).removeClass('w3-black');
         $(this).addClass('w3-teal');
-        $("#d6specPic").attr('src',"res/6/Group 543.png");
+        $("#d6specPic").attr('src',"res/6/Group 596.png");
         $("#d6enginePic").attr('src',"res/6/Group 547.png");
     });
 
@@ -191,7 +191,7 @@ $(document).ready(function(){
         resetcolor();
         $(this).removeClass('w3-black');
         $(this).addClass('w3-teal'); 
-        $("#d6specPic").attr('src',"res/6/Group 544.png");
+        $("#d6specPic").attr('src',"res/6/Group 598.png");
         $("#d6enginePic").attr('src',"res/6/Group 547.png");
     });
 
