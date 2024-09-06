@@ -1,342 +1,323 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/w3.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/w3.css">
 
-    <!-- <link rel=”stylesheet” href=”http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css” />
-    <script src=”http://code.jquery.com/jquery-1.11.1.min.js”></script>
-    <script src=”http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js”></script>  -->
+	<!-- <link rel=”stylesheet” href=”http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css” />
+	<script src=”http://code.jquery.com/jquery-1.11.1.min.js”></script>
+	<script src=”http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js”></script> -->
 
-    <script src="js/jquery-3.7.1.js"></script>
-    <script src="js/scripts.js"></script> 
+	<script src="js/jquery-3.7.1.js"></script>
+	<script src="js/scripts.js"></script> 
 
-</head>    
+</head>	
 <body>
- 
-    <div class="disabled" id ="nav-icon" style="z-index: 1;position: absolute; top: 30px; left: 30px; width: 10%; ">
-        <img style="width: 100%;" src="res/0/Group 506.png" >
-    </div>
-    <div class="fs-tab disabled" id="d1" >
-        <video autoplay playsinline muted loop id="introVideo" style="width: 100%; vertical-align:bottom;" src="res/1/e067c18b108293429fb60b96a2b59340.mp4" type="video/mp4" >
-            <!-- <source src="res/1/75hp.mp4" type='video/mp4 codecs="hvc1"' > -->
-            <!-- <source src="res/1/264-75HP-Ani.mp4" type="video/mp4"> -->
-            <!-- this device does not support -->
-        </video>
-        <div id="d1-text" class="" style="position: absolute;top: 0%; width: 100%; height: 100%;">
-            <div class="acelFlexBox w3-center" style="font-size: 8vmin; color: #b6ffdbb9;">
-                <p style="letter-spacing:15px;margin: 0 0 0 0 ;">SMART BY DESIGN</p>
-                <p style="letter-spacing:15px;margin: 0 0 0 0 ;">NEXT -LEVEL ELECTRIC</p> 
-            </div>
-        </div>
-    </div>
-
-    <div class="fs-tab disabled" id="d1-mac" >
-       <img style="width:100%;" src="res/1/Group 585(LoRes).png">
-       <div id="d1-mac-text" class="" style="position: absolute;top: 0%; width: 100%; height: 100%;">
-            <div class="acelFlexBox w3-center" style="font-size: 8vmin; color: #b6ffdbb9;">
-                <p style="text-shadow:2px 2px 5px black;letter-spacing:15px;margin: 0 0 0 0 ;">SMART BY DESIGN</p>
-                <p style="text-shadow:2px 2px 5px black;letter-spacing:15px;margin: 0 0 0 0 ;">NEXT -LEVEL ELECTRIC</p> 
-            </div>
-        </div>
-    </div>
-
-    <div class="fs-tab disabled" id="d2">
-        <!-- <img style="width: 100%;height: 100%;" src="res/2/aerial-shot-yacht-cruising-sea-leaving-splashing-traces 5.png"> -->
-        <div class="w3-center" style="width:100%; color:white; font-size:3vmin;">
-            <p style="margin: 0 0 0 0; padding-top: 30px;">VISIT OUR BOOTH TO</p>
-            <p style="margin: 0 0 0 0; padding-bottom: 20px;">EXPERIENCE THE FUTURE OF ELECTRIC</p>
-        </div>
-
-        <!-- <p id="p2-1" class="w3-center">COME EXPERIENCE THE NEXT LEVEL</p> -->
-        <div class="w3-center" style=" width: 100%;">
-            <!-- <div style="position:relative;">
-                <div class="w3-col s2 l3 w3-container acelEmpty"></div>
-                <div class="w3-col s8 l6">
-                    <img style="width:100%;" src="res/2/Group 544.png">
-                    <div id="p2-11">🇨🇦 TORONTO BOAT SHOW</div>
-                    <div id="p2-12">Booth # 147</div>
-                    <div id="p2-13">Enercare Centre, Exhibition Place</div>
-
-                    <div id="p2-14">🇺🇸 Miami Int'l Boat Show</div>
-                    <div id="p2-15">Booth #IM48828</div>
-                    <div id="p2-16">Miami Convention Centre</div>
-                </div>
-                <div class="w3-col s2 l3 w3-container acelEmpty"></div>
-            </div> -->
-            <div class="w3-row" style="width:100%; color:white;">
-                <div class="w3-col s2 m3 l4 acelEmpty"></div>
-                <div class="w3-col s8 m6 l4">
-                    <img style="width:100%;"src="res/2/Group 584.png">
-                </div>
-                <div class="w3-col s2 m3 l4 acelEmpty"></div>
-            </div>
-            <!-- <img style="width:50%;" src="res/2/Group 584.png"> -->
-        </div>
-        <!-- <div id="p2-2">
-            <img src="res/2/Group 544.png">
-            <p id="p2-3">🇨🇦 TORONTO BOAT SHOW</p>
-            <pre id="p2-4">Booth # 147
-                Enercare Centre, Exhibition Place</pre>
-            <p id="p2-5">🇺🇸 Miami</p>
-            <p id="p2-6">#IM48828</p>
-        </div> -->
-
-        <div class="w3-center" style="width:100%; color:white; font-size:6vmin; white-space: nowrap;">
-            <p style="margin: 0 0 60px 0; padding-top: 140px; ">ACEL Intelligent Electric Series</p>
-        </div>
-
-        <div class="w3-row" style="width:100%; color:white;">
-            <div class="w3-col s4 w3-container acelEmpty"></div>
-            <div class="w3-col s4 w3-container">
-                <!-- <img style="width:100%;"src="res/2/Group 553.png"> -->
-                <img style="width:100%;"src="res/2/Group 553(2).png">
-            </div>
-            <div class="w3-col s4 w3-container acelEmpty"></div>
-        </div>
-
-        <div class="w3-center" style="width:100%; color:white; font-size:5vmin;  white-space: nowrap;">
-            <p style="margin: 0 0 0 0; padding-top: 60px; ">Comprehensive Intelligent</p>
-            <p style="margin: 0 0 0 0; padding-bottom: 30px;">Electric Propulsion System</p>
-        </div>
-
-        <div class="w3-center" style="position:absolute; top:40vmin; width:100%; ">
-            <img style="width: 100%;" src="res/2/Vector.png"`>
-        </div>
-    </div>
-
-    <div class="fs-tab w3-black disabled" id="d3">
-        <video controls muted id="renderVideo" style="width: 100%; vertical-align:bottom;" >
-            <!-- <source src="res/3/Full System Animation_ 4.mp4" type='video/mp4 codecs="hvc1"'> -->
-            <!-- <source src="res/3/[264]Full-System-Animation-4.mp4" type="video/mp4"> -->
-            <source src="res/3/Full System Animation_v2.1_1080P.mp4" type="video/mp4">
-            <!-- this device does not support -->
-        </video>
-        <div class="w3-row" style="font-size:3vmin;width: 100%;">
-            <div class="w3-col s1 w3-container acelEmpty"></div>
-            <div class="w3-center w3-col s10" style="width:80%; padding: 15px 0 15px 0;" >
-                ACEL’s comprehensive intelligent solution consists of seamlessly integrated components, 
-                including Outboard Motors, Battery System, Intelligent Power Supply, 
-                Digital Throttle, Smart Charger, Smart Key, and an Onboard Computer.
-            </div>
-            <div class="w3-col 14 w3-container acelEmpty"></div>
-
-            </p>
-        </div>
-    </div>
-
-    <div class="fs-tab disabled" id="d4" >
-        <img  style="width: 100%;" src="res/4/Rectangle 704.png" >
-        <div class="w3-center" style="width:100%; font-size:6vmin; position: absolute; top: 5%;">
-            NOW AVAILABLE
-        </div>
-        <div class="w3-row" style="width:100%; position: absolute; top: 5%;">
-            <!-- <div class="w3-col s3 w3-container acelEmpty"></div> -->
-            <div class="w3-col s3"><img style="width: 100%;transform: scale(0.8);"src="res/4/Group 575.png"></div>
-            <div class="w3-col s3"><img style="width: 100%;transform: scale(0.8);"src="res/4/Group 576.png"></div>
-            <!-- <div class="w3-col s3 w3-container acelEmpty"></div> -->
-            <div class="w3-col s3"><img style="width: 100%;transform: scale(0.8);"src="res/4/Group 577.png"></div>
-            <div class="w3-col s3"><img style="width: 100%;transform: scale(0.8);"src="res/4/Group 578.png"></div>
-        </div>
-        <!-- <div class="w3-row" style="width:100%; position: absolute; top: 78%;"> -->
-            <!-- <div class="w3-col s3 w3-container acelEmpty"></div> -->
-            <!-- <div class="w3-center w3-col s3">50HP</div> -->
-            <!-- <div class="w3-center w3-col s3">75HP</div> -->
-            <!-- <div class="w3-col s3 w3-container acelEmpty"></div> -->
-            <!-- <div class="w3-center w3-col s3">150HP</div> -->
-            <!-- <div class="w3-center w3-col s3">250HP</div> -->
-        <!-- </div> -->
-        <div class="w3-row" id="orderbtn" style="width:100%; position: absolute; top: 85%;">
-            <div class="w3-center w3-col s4" style="color:white; background-color:#034442;font-size:4vmin;border-radius:8px;position:absolute;left: 50%;transform:translate(-50%);">Order Today</div>
-        </div>
-    </div>
-
-    <div class="fs-tab disabled" id="d5">
-        <!-- <img src="res/5/Rectangle 705.png" style="width:100%; margin-top: -15vmin;" > -->
-
-        <div id="d5-0" class="w3-row " style="width:100%; margin-top:0vmin;padding-top:30px;">
-
-            <div class="w3-center" style=" padding: 30px 0 15px 0; width:100%; color: white;">
-                <p style="margin: 0 0 0 0 ;font-size: 5vmin;"><b>Exceptional Features. Superior Performance</b> </p>
-            </div>
-            <!-- <div class="w3-center" style=" margin: 30px 0 10px 0; width:100%; color: white;">
-                <img style="width:80%;"src="res/L5/75HP outboard_2 1.png">
-            </div> -->
-            <div class="w3-center w3-row" style="position: relative; padding: 15px 0 15px 0; width:100%; color: white;">
-                <div class="w3-col s1 w3-container acelEmpty"></div>
-                <div class="w3-center w3-col s5" style="">
-                    <img style="width:100%;"src="res/5/75HP outboard_2 1.png">
-                </div>
-                <div class="w3-col s1 w3-container acelEmpty"></div>
-                <div class="w3-center w3-col s4" style="
-                position: absolute;
-                top: 50%;
-                left: 75%;
-                transform: translate(-50%, -50%);">
-                    <p class="w3-left-align" style="margin: 10px 0 10px 0 ;font-size: 20px;"><b>95.8% Power Train Efficiency.</b> </p>
-                    <p class="w3-left-align" style="margin: 0 0 0 0 ;font-size: 15px;">ACEL boasts of 95.8% powertrain efficiency. This is achieved through meticulous engineering, utilization of high-quality components, and the seamless integration of advanced technologies, ensuring minimal energy loss and optimal performance. </p>
-                </div>
-                <div class="w3-col s1 w3-container acelEmpty"></div>
-            </div>
-
-            <!-- <div class="w3-center" style=" margin: 30px 0 10px 0; width:100%; color: white;">
-                <img style="width:80%;"src="res/L5/battery-500x1000-1 1.png">
-            </div> -->
-            <div class="w3-center w3-row" style="position: relative; padding: 15px 0 15px 0; width:100%; color: white;">
-                <div class="w3-col s1 w3-container acelEmpty"></div>
-                <div class="w3-center w3-col s5 w3-container acelEmpty" style=""></div>
-                <div class =""style="
-                width:33.33%;
-                position: absolute;
-                top: 50%;
-                left: 30%;
-                transform: translate(-50%, -50%);
-                ">
-                    <p class="w3-left-align" style="margin: 10px 0 10px 0 ;font-size: 20px;"><b>Patented Technology. Hybrid Integration </b></p>
-                    <p class="w3-left-align" style="margin: 0 0 0 0 ;font-size: 15px;">Our patented technology allows stacking and customization of battery packs, allowing for various applications. Our system can also seamlessly link to any secondary power source, establishing a hybrid system on the go.</p>
-                </div>
-                <div class="w3-col s1 w3-container acelEmpty"></div>
-                <div class="w3-center w3-col s4" style="">
-                    <img style="width:100%;"src="res/5/battery-500x1000-1 1.png">
-                </div>
-                <div class="w3-col s1 w3-container acelEmpty"></div>
-            </div>
+	
+	<!--
+		L0 nav bar
+	-->
+	<div class="disabled" id ="nav-icon" style="z-index: 1;position: absolute; top: 30px; left: 30px; width: 10%; ">
+		<img loading="lazy" style="width: 100%;" src="res/0/Group 506.png" >
+	</div>
 
 
-            <!-- <div class="w3-center" style=" margin: 30px 0 10px 0; width:100%; color: white;">
-                <img style="width:80%;"src="res/L5/vcu-front 3.png">
-            </div> -->
-            <div class="w3-center w3-row" style="position: relative; padding: 15px 0 15px 0; width:100%; color: white;">
-                <div class="w3-col s2 w3-container acelEmpty"></div>
-                <div class="w3-center w3-col s4 " style="">
-                    <img style="width:100%;"src="res/5/vcu-front 3.png">
-                </div>
-                <div class="w3-col s1 w3-container acelEmpty"></div>
-                <div class="w3-center w3-col s4 " style="
-                position: absolute;
-                top: 50%;
-                left: 75%;
-                transform: translate(-50%, -50%);">
-                    <p class="w3-left-align" style="margin: 30px 0 10px 0 ;font-size: 20px;"><b>Software-Enabled Integration.</b> </p>
-                    <p class="w3-left-align" style="margin: 0 0 0 0 ;font-size: 15px;">The Onboard Computer comes wih  an intuitive touch screen and is equipped with proprietary AI software, Wi-Fi, Bluetooth, and LTE. Features like over-the-air notifications, and predictive & remote monitoring enhance convenience and performance. </p>
-                </div>
-                <div class="w3-col s1 w3-container acelEmpty"></div>
-            </div>
-        </div>
+	<!--
+		L1 intro video
+	-->
+	<div class="fs-tab disabled" id="d1" >
+		<video autoplay preload="none" playsinline muted loop id="introVideo" style="width: 100%; vertical-align:bottom;" src="res/1/v2intro.mp4" type="video/mp4" >
+			<!-- <source src="res/1/75hp.mp4" type='video/mp4 codecs="hvc1"' > -->
+			<!-- <source src="res/1/264-75HP-Ani.mp4" type="video/mp4"> -->
+			<!-- this device does not support -->
+		</video>
+		<div id="d1-text" class="" style="position: absolute;top: 0%; width: 100%; height: 100%;">
+			<!-- <div class="acelFlexBox w3-center" style="font-size: 8vmin; color: #b6ffdbb9;">
+				<p style="letter-spacing:15px;margin: 0 0 0 0 ;">SMART BY DESIGN</p>
+				<p style="letter-spacing:15px;margin: 0 0 0 0 ;">NEXT -LEVEL ELECTRIC</p> 
+			</div> -->
+			<img loading="lazy" style="width: 100%;" src="res/1/SMART0.png" >
+		</div>
+	</div>
 
-        
-        <div class="w3-row"  style="width:100%; ">
-            <div class="w3-col s4 w3-container acelEmpty"></div>
-            <div class="w3-center w3-col s4" style="margin: 30px 0 30px 0;color:white;" id="btn-5">
-                <img style="width:100%" src="res/5/Group 574.png" >
-            </div>
-            <!-- <div class="w3-center w3-col s6" style="margin: 30px 0 30px 0;color:white; background-color:#034442;font-size:4vmin;border-radius:8px;">Visit Booth 147 at Toronto Boat Show to learn more</div> -->
-            <div class="w3-col s4 w3-container acelEmpty"></div>
-        </div>
+	<!--
+		L1-mac intro picture
+	-->
+	<div class="fs-tab disabled" id="d1-mac" >
+	 	<img loading="lazy" style="width:100%;" src="res/1/Group 585(LoRes).png">
+	 	<div id="d1-mac-text" class="" style="position: absolute;top: 0%; width: 100%; height: 100%;">
+			<!-- <div class="acelFlexBox w3-center" style="font-size: 8vmin; color: #b6ffdbb9;">
+				<p style="text-shadow:2px 2px 5px black;letter-spacing:15px;margin: 0 0 0 0 ;">SMART BY DESIGN</p>
+				<p style="text-shadow:2px 2px 5px black;letter-spacing:15px;margin: 0 0 0 0 ;">NEXT -LEVEL ELECTRIC</p> 
+			</div> -->
+			<img loading="lazy" style="width: 100%;" src="res/1/SMART0.png" >
+		</div>
+	</div>
 
-        <!-- <div id="d5btnPrev" style="margin-top:400px;width: 5%; position: absolute; top:0; left:5%"><img src="res/5/Group 541.png" style="width:100%;"></div>
-        <div id="d5btnNext" style="margin-top:400px;width: 5%; position: absolute; top:0; left:90%"><img src="res/5/Group 542.png" style="width:100%;"></div> -->
-    </div>
+	<!--
+		L2 intro video
+	-->
+	<div class="fs-tab disabled" id="d2">
+		<!-- <img loading="lazy" style="width: 100%;height: 100%;" src="res/2/aerial-shot-yacht-cruising-sea-leaving-splashing-traces 5.png"> -->
+		<!-- <div class="w3-center" style="width:100%; color:white; font-size:3vmin;">
+			<p style="margin: 0 0 0 0; padding-top: 30px;">VISIT OUR BOOTH TO</p>
+			<p style="margin: 0 0 0 0; padding-bottom: 20px;">EXPERIENCE THE FUTURE OF ELECTRIC</p>
+		</div> -->
 
-    <div class="fs-tab disabled" id="d6" style="background-color: white;">
-        <div class="w3-row" style="width:100%; padding: 0 0 30px 0;">
-            <div class="w3-col s4"><img id="d6enginePic" style="width: 100%; transform:scale(0.8);" src="res/6/Group 547.png"></div>
-            <div class="w3-col s7" style="margin-left: -5%;">
-                <div Style="margin: 30px 0 30px 0; font-size:5vmin; margin-top: 5vmin;">Specs</div>
-                <div class="w3-row" style="margin: 30px 0 30px 0; width:100%; ">
-                    <div class="w3-col s6">
-                        <div class="w3-row" style="width:100%; ">
-                            <div id="d6btn50" class="w3-col s5 w3-teal w3-center">50HP</div>
-                            <div class="w3-col s1 w3-container acelEmpty"></div>
-                            <div id="d6btn75" class="w3-col s5 w3-black w3-center">75HP</div>
-                            <div class="w3-col s1 w3-container acelEmpty"></div>
-                        </div>
-                    </div>
-                    <div class="w3-col s6">
-                        <div class="w3-row" style="width:100%; ">
-                            <div id="d6btn150" class="w3-col s5 w3-black w3-center">150HP</div>
-                            <div class="w3-col s1 w3-container acelEmpty"></div>
-                            <div id="d6btn250" class="w3-col s5 w3-black w3-center">250HP</div>
-                            <div class="w3-col s1 w3-container acelEmpty"></div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <img  id="d6specPic" style="width: 100%;" src="res/6/Group 596.png">
-                </div>
-            </div>
-            <div class="w3-col s1 w3-container acelEmpty"></div>
-        </div>
-    </div>
+		<!--
+			L2 background
+		-->
+		<img loading="lazy" style="width:100%;" src="res/2/Group 608.png">
 
 
-    <div class="fs-tab disabled" id="d7" style="background-color: black;">
-        <!-- <div><img style="width: 100%;" src="res/7/Group 550.png"></div> -->
-        <div class="w3-row" style=" width: 100%;padding: 50px 0 30px 0;">
-            <div class="w3-col s1 w3-container acelEmpty"></div>
-            <div class="w3-col s10">
-                <div class="w3-row" style="width: 100%;">
+		<div class="w3-center" style=" width: 100%;position:absolute; bottom:58%">
+			<!--
+				L2 todo booth card
+			-->
+			<img loading="lazy" style="width:40%;" src="res/2/Group 611.png">
+		</div>
+	</div>
 
-                    <div class="w3-center w3-col s5" style="position: relative;">
-                        <img style="width:100%;"src="res/7/Group 580.png">
-                        <div id="cta-7-1" style="position: absolute; top: 85%;display:block;margin-left: auto;margin-right: auto;width:100%;">
-                            <img style="width:60%;"src="res/7/Group 570.png">
-                        </div>
-                    </div>
-                    <div class="w3-col s2 w3-container acelEmpty"></div>
-                    <div class="w3-center w3-col s5" style="position: relative;">
-                        <img style="width:100%;"src="res/7/Group 579.png">
-                        <div id="cta-7-2" style="position: absolute; top: 85%;display:block;margin-left: auto;margin-right: auto;width:100%;"> 
-                            <img style="width:60%;"src="res/7/Group 586.png">
-                        </div>
-                    </div>
-                </div>
+	<!--
+		L3 intro video 2
+		Comprehensive Intelligent
+	-->
+	<div style="margin: -60% 0 0 0;" class="fs-tab w3-black disabled" id="d3">
+		<div class="w3-center" style="width:100%; color:white; font-size:5vmin; white-space: nowrap;">
+			<p style="margin: 0 0 0 0; padding-top: 0px; ">Comprehensive Intelligent</p>
+			<p style="margin: 0 0 0 0; padding-bottom: 30px;">Electric Propulsion System</p>
+		</div>
+		
+		<video controls preload="none" muted id="renderVideo" style="width: 100%; vertical-align:bottom;" >
+			<!-- <source src="res/3/Full System Animation_ 4.mp4" type='video/mp4 codecs="hvc1"'> -->
+			<!-- <source src="res/3/[264]Full-System-Animation-4.mp4" type="video/mp4"> -->
+			<source src="res/3/Full System Animation_v2.1_1080P.mp4" type="video/mp4">
+			<!-- this device does not support -->
+		</video>
+		<div class="w3-row" style="font-size:3vmin;width: 100%;">
+			<div class="w3-col s1 w3-container acelEmpty"></div>
+			<div class="w3-center w3-col s10" style="width:80%; padding: 15px 0 15px 0;" >
+				ACEL’s comprehensive intelligent solution consists of seamlessly integrated components, 
+				including Outboard Motors, Battery System, Intelligent Power Supply, 
+				Digital Throttle, Smart Charger, Smart Key, and an Onboard Computer.
+			</div>
+			<div class="w3-col 14 w3-container acelEmpty"></div>
 
-                <!-- <div class="w3-row" style="width: 100%;">
-                    <div class="w3-col s5">
-                        <img style="width: 100%;" src="res/7/Rectangle 715.png">
-                        <div id="p7-1" class="">
-                            <p style="margin-top: 0;">ACEL Power: The Trailblazing Innovator</p>
-                        </div>
-                        <div id="p7-2" class="" style="width:33%;">
-                            <p>ACEL Power draws on decades of extensive experience,
-                            notably as pioneers with one of the earliest Li-ion 
-                            battery facilities. As the world's first manufacturer
-                            of 50HP and 75HP zero-emission electric outboards,
-                            we're reshaping design, performance, and safety
-                            standards for boats. Our innovative electric propulsion 
-                            system offers customizable solutions, with upcoming 
-                            lines expanding the range from 1HP to 800HP.</p>
-                        </div>
-                        <div id="cta-8-1" style="position:absolute;top: 75%; left: 9%;width: 20%;"><img style="width:100%;" src="res/8/Group 570.png"></div>
-                    </div>
-                    <div class="w3-col s2 w3-container acelEmpty"></div>
-                    <div class="w3-col s5">
-                        <img style="width: 100%;" src="res/7/Rectangle 715.png">
-                        <div id="p7-3" class="">
-                            <p style="margin-top: 0;">The Future is in the Technology</p>
-                        </div>
-                        <div id="p7-4" class="" style="width:33%;">
-                            <p>ACEL is more than electric outboard motors.
-                            Our patented technology and proprietary software 
-                            set us apart. We are working on advanced technologies 
-                            in automation, smart charging infrastructure, 
-                            IoT (Internet of Things) and more which will 
-                            help to create a complete eco-system advancing 
-                            convenience and choice for boaters who choose electric.</p>
-                        </div>
-                        <div id="cta-8-2" style="position:absolute;top: 75%; left: 58%;width: 17.5%;"><img style="width:100%;" src="res/8/Group 571.png"></div>
-                    </div>
-                </div> -->
-            </div>
-            <div class="w3-col s1 w3-container acelEmpty"></div>
-        </div>
-        <div class="w3-center" style="width: 100%; padding: 30px 0 30px 0;">
-            <img style="width: 20%;" src="res/L7/Group 532.png">
-        </div>
-    </div>
+			</p>
+		</div>
+	</div>
+
+	<!--
+		L4 engine model and order button
+	-->
+	<div class="fs-tab disabled" id="d4" >
+		<!-- <img loading="lazy" style="width: 100%;" src="res/4/Rectangle 704.png" > -->
+		<img loading="lazy" style="width: 100%;" src="res/4/Group 609.png" >
+		<div class="w3-center" style="width:100%; font-size:6vmin; position: absolute; top: 5%;">
+			<!-- NOW AVAILABLE -->
+
+		</div>
+		<!-- <div class="w3-row" style="width:100%; position: absolute; top: 5%;"> -->
+			<!-- <div class="w3-col s3 w3-container acelEmpty"></div> -->
+			<!-- <div class="w3-col s3"><img loading="lazy" style="width: 100%;transform: scale(0.8);"src="res/4/Group 575.png"></div> -->
+			<!-- <div class="w3-col s3"><img loading="lazy" style="width: 100%;transform: scale(0.8);"src="res/4/Group 576.png"></div> -->
+			<!-- <div class="w3-col s3 w3-container acelEmpty"></div> -->
+			<!-- <div class="w3-col s3"><img loading="lazy" style="width: 100%;transform: scale(0.8);"src="res/4/Group 577.png"></div> -->
+			<!-- <div class="w3-col s3"><img loading="lazy" style="width: 100%;transform: scale(0.8);"src="res/4/Group 578.png"></div> -->
+		<!-- </div> -->
+		<!-- <div class="w3-row" style="width:100%; position: absolute; top: 78%;"> -->
+			<!-- <div class="w3-col s3 w3-container acelEmpty"></div> -->
+			<!-- <div class="w3-center w3-col s3">50HP</div> -->
+			<!-- <div class="w3-center w3-col s3">75HP</div> -->
+			<!-- <div class="w3-col s3 w3-container acelEmpty"></div> -->
+			<!-- <div class="w3-center w3-col s3">150HP</div> -->
+			<!-- <div class="w3-center w3-col s3">250HP</div> -->
+		<!-- </div> -->
+		<div class="w3-row w3-center" style="width:100%; position: absolute; top: 88%;">
+			<img id="orderbtn-4" loading="lazy" style="width: 30%;border-radius:20px;" src="res/4/order buttom.png" >
+			<!-- <div class="w3-center w3-col s4" style="width:42%; color:white; background-color:#034442;font-size:4vmin;border-radius:8px">Order Today</div> -->
+		</div>
+	</div>
+
+
+	<!--
+		L5 three major selling point
+	-->	
+	<div class="fs-tab disabled" id="d5">
+		<!-- <img loading="lazy" src="res/5/Rectangle 705.png" style="width:100%; margin-top: -15vmin;" > -->
+
+		<div id="d5-0" class="w3-row " style="width:100%; margin-top:0vmin;padding-top:30px;">
+
+			<div class="w3-center" style=" padding: 30px 0 15px 0; width:100%; color: rgb(0, 0, 0);">
+				<p style="margin: 0 0 0 0 ;font-size: 5vmin;"><b>Exceptional Features. Superior Performance</b> </p>
+			</div>
+			<!-- <div class="w3-center" style=" margin: 30px 0 10px 0; width:100%; color: white;">
+				<img loading="lazy" style="width:80%;"src="res/L5/75HP outboard_2 1.png">
+			</div> -->
+
+			<!--
+				L5-1 power Train Efficiency
+			-->	
+			<div class="w3-center w3-row" style="position: relative; padding: 15px 0 15px 0; width:100%; color: rgb(0, 0, 0);">
+				<div class="w3-col s1 w3-container acelEmpty"></div>
+				<div class="w3-center w3-col s5" style="">
+					<img loading="lazy" style="width:100%;"src="res/5/75HP outboard_2 1.png">
+				</div>
+				<div class="w3-col s1 w3-container acelEmpty"></div>
+				<div class="w3-center w3-col s4" style="
+				position: absolute;
+				top: 50%;
+				left: 75%;
+				transform: translate(-50%, -50%);">
+					<p class="w3-left-align" style="margin: 10px 0 10px 0 ;font-size: 20px;"><b>95.8% Power Train Efficiency.</b> </p>
+					<p class="w3-left-align" style="margin: 0 0 0 0 ;font-size: 15px;">ACEL boasts of 95.8% powertrain efficiency. This is achieved through meticulous engineering, utilization of high-quality components, and the seamless integration of advanced technologies, ensuring minimal energy loss and optimal performance. </p>
+				</div>
+				<div class="w3-col s1 w3-container acelEmpty"></div>
+			</div>
+
+			<!-- <div class="w3-center" style=" margin: 30px 0 10px 0; width:100%; color: white;">
+				<img loading="lazy" style="width:80%;"src="res/L5/battery-500x1000-1 1.png">
+			</div> -->
+			<!--
+				L5-2 patented technology
+			-->	
+			<div class="w3-center w3-row" style="position: relative; padding: 15px 0 15px 0; width:100%; color: rgb(0, 0, 0);">
+				<div class="w3-col s1 w3-container acelEmpty"></div>
+				<div class="w3-center w3-col s5 w3-container acelEmpty" style=""></div>
+				<div class =""style="
+				width:33.33%;
+				position: absolute;
+				top: 50%;
+				left: 30%;
+				transform: translate(-50%, -50%);
+				">
+					<p class="w3-left-align" style="margin: 10px 0 10px 0 ;font-size: 20px;"><b>Patented Technology. Hybrid Integration </b></p>
+					<p class="w3-left-align" style="margin: 0 0 0 0 ;font-size: 15px;">Our patented technology allows stacking and customization of battery packs, allowing for various applications. Our system can also seamlessly link to any secondary power source, establishing a hybrid system on the go.</p>
+				</div>
+				<div class="w3-col s1 w3-container acelEmpty"></div>
+				<div class="w3-center w3-col s4" style="">
+					<img loading="lazy" style="width:100%;"src="res/5/battery-500x1000-1 1.png">
+				</div>
+				<div class="w3-col s1 w3-container acelEmpty"></div>
+			</div>
+
+
+			<!-- <div class="w3-center" style=" margin: 30px 0 10px 0; width:100%; color: white;">
+				<img loading="lazy" style="width:80%;"src="res/L5/vcu-front 3.png">
+			</div> -->
+			<!--
+				L5-3 Software Integration
+			-->	
+			<div class="w3-center w3-row" style="position: relative; padding: 15px 0 15px 0; width:100%; color: rgb(0, 0, 0);">
+				<div class="w3-col s2 w3-container acelEmpty"></div>
+				<div class="w3-center w3-col s4 " style="">
+					<img loading="lazy" style="width:100%; "src="res/5/HMI-0607-V1.png">
+				</div>
+				<div class="w3-col s1 w3-container acelEmpty"></div>
+				<div class="w3-center w3-col s4 " style="
+				position: absolute;
+				top: 50%;
+				left: 75%;
+				transform: translate(-50%, -50%);">
+					<p class="w3-left-align" style="margin: 30px 0 10px 0 ;font-size: 20px;"><b>Software-Enabled Integration.</b> </p>
+					<p class="w3-left-align" style="margin: 0 0 0 0 ;font-size: 15px;">The Onboard Computer comes wih an intuitive touch screen and is equipped with proprietary AI software, Wi-Fi, Bluetooth, and LTE. Features like over-the-air notifications, and predictive & remote monitoring enhance convenience and performance. </p>
+				</div>
+				<div class="w3-col s1 w3-container acelEmpty"></div>
+			</div>
+		</div>
+
+		<!--
+			L5 Learn More buttton
+		-->	
+		<div class="w3-center" style="width:100%; ">
+			<!-- <div class="w3-col s4 w3-container acelEmpty"></div> -->
+			<!-- <div class="w3-center w3-col s4" style="margin: 30px 0 30px 0;color:white;" id="btn-5"> -->
+				<img id="btn-5" loading="lazy" style="border-radius:20px; width:30%; margin: 30px 0 30px 0" src="res/5/Group 574.png" >
+			<!-- </div> -->
+			<!-- <div class="w3-center w3-col s6" style="margin: 30px 0 30px 0;color:white; background-color:#034442;font-size:4vmin;border-radius:8px;">Visit Booth 147 at Toronto Boat Show to learn more</div> -->
+			<!-- <div class="w3-col s4 w3-container acelEmpty"></div> -->
+		</div>
+
+		<!-- <div id="d5btnPrev" style="margin-top:400px;width: 5%; position: absolute; top:0; left:5%"><img loading="lazy" src="res/5/Group 541.png" style="width:100%;"></div>
+		<div id="d5btnNext" style="margin-top:400px;width: 5%; position: absolute; top:0; left:90%"><img loading="lazy" src="res/5/Group 542.png" style="width:100%;"></div> -->
+	</div>
+
+	<div class="fs-tab disabled" id="d6" style="background-color: white;">
+		<div class="w3-row" style="width:100%; padding: 0 0 -30px 0;">
+			<div class="w3-col s4"><img loading="lazy" id="d6enginePic" style="width: 100%; transform:scale(0.6);" src="res/6/50hpv2.png"></div>
+			<div class="w3-col s7" style="margin-left: -5%;">
+				<div Style="margin: 30px 0 30px 0; font-size:5vmin; margin-top: 5vmin;">Specs</div>
+				<div class="w3-row" style="margin: 30px 0 30px 0; width:100%; ">
+					<div class="w3-col s6">
+						<div class="w3-row" style="width:100%;display: flex;">
+							<div id="d6btn50" 	style=" border-radius:5px ;width:40%	;display: flex;justify-content: center;" 	class=" acel-dark-green w3-center">50HP</div>
+							<div 				style=" border-radius:5px ;width:10%	;display: flex;justify-content: center;"  	class=" w3-container acelEmpty"></div>
+							<div id="d6btn75" 	style=" border-radius:5px ;width:40%	;display: flex;justify-content: center;" 	class=" w3-black w3-center">75HP</div>
+							<div 				style=" border-radius:5px ;width:10% 	;display: flex;justify-content: center;"	class=" w3-container acelEmpty"></div>
+						</div>
+					</div>
+					<div class="w3-col s6">
+						<div class="w3-row" style="width:100%; display: flex;">
+							<div id="d6btn150" 	style=" border-radius:5px ;width:40%	;display: flex;justify-content: center;" 	class=" w3-black w3-center">150HP</div>
+							<div 				style=" border-radius:5px ;width:10%	;display: flex;justify-content: center;"  	class=" w3-container acelEmpty"></div>
+							<div id="d6btn250" 	style=" border-radius:5px ;width:40%	;display: flex;justify-content: center;" 	class=" w3-black w3-center">250HP</div>
+							<div 				style=" border-radius:5px ;width:10% 	;display: flex;justify-content: center;"	class=" w3-container acelEmpty"></div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<img loading="lazy" id="d6specPic" style="width: 100%;" src="res/6/50hpspecs.png">
+				</div>
+			</div>
+			<div class="w3-col s1 w3-container acelEmpty"></div>
+		</div>
+	</div>
+
+
+	<div class="fs-tab disabled" id="d7" style="background-color: black;">
+		<!-- <div><img loading="lazy" style="width: 100%;" src="res/7/Group 550.png"></div> -->
+		<div class="w3-row" style=" width: 100%;padding: 50px 0 30px 0;">
+			<div class="w3-col s1 w3-container acelEmpty"></div>
+			<div class="w3-col s10">
+				<div class="w3-row" style="width: 100%;">
+
+					<div class="w3-col s6" style="">
+						<div class="w3-row" style="width: 100%;">
+							<div class="w3-center w3-col s11" style="position: relative;">
+								<img loading="lazy" style="width:100%;"src="res/7/Group 580.png">
+								<div  style="position: absolute; top: 80%;display:block;margin-left: auto;margin-right: auto;width:100%;">
+									<img loading="lazy" style="width:50%;border-radius:25px"src="res/7/Group 570.png" id="cta-7-1">
+								</div>
+							</div>
+						
+							<div class="w3-col s1 w3-container acelEmpty"></div>
+						</div>
+					</div>
+
+					<div class="w3-col s6" style="">
+						<div class="w3-row" style="width: 100%;">
+							<div class="w3-col s1 w3-container acelEmpty"></div>
+							<div class="w3-center w3-col s11" style="position: relative;">
+								<img loading="lazy" style="width:100%;"src="res/7/Group 579.png">
+								<div  style="position: absolute; top: 80%;display:block;margin-left: auto;margin-right: auto;width:100%;"> 
+									<img loading="lazy" style="width:50%;border-radius:25px"src="res/7/Group 586.png" id="cta-7-2">
+								</div>
+							</div>
+						
+						
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="w3-col s1 w3-container acelEmpty"></div>
+		</div>
+		<div class="w3-center" style="width: 100%; padding: 30px 0 30px 0;">
+			<img loading="lazy" style="width: 20%;" src="res/L7/Group 532.png">
+		</div>
+	</div>
 
 
 
@@ -346,165 +327,213 @@
 
 
 
-    <!-- Protrait Mode -->
+	<!-- Protrait Mode -->
+	<!--
+		dL1 mobile page first card
+		intro video
+	
+	-->
+	<div class="fs-tab disabled" id="dL1" style="background-color: rgb(0, 0, 0);">
+		<div class="w3-center" style="padding:10px 0 10px 0; width:100%; height: 72px">
+			<img loading="lazy" style="height:100%;"src="res/L1/Group 506.png">
+		</div>
+		<!-- <img loading="lazy" style="width:100%;"src="res/L1/Group 573(LoRes).png"> -->
+		<video autoplay preload="none" playsinline muted loop id="introVideo" style="width: 100%; vertical-align:bottom;" src="res/L1/v2intro.mp4" type="video/mp4" >
+			<!-- <source src="res/1/75hp.mp4" type='video/mp4 codecs="hvc1"' > -->
+			<!-- <source src="res/1/264-75HP-Ani.mp4" type="video/mp4"> -->
+			<!-- this device does not support -->
+		</video>
 
-    <div class="fs-tab disabled" id="dL1" style="background-color: white;">
-        <!-- <img style="width:100%;"src="res/L1/Group 573(LoRes).png"> -->
-        <video autoplay playsinline muted loop id="introVideo" style="width: 100%; vertical-align:bottom;" src="res/L1/25075vertical.mp4" type="video/mp4" >
-            <!-- <source src="res/1/75hp.mp4" type='video/mp4 codecs="hvc1"' > -->
-            <!-- <source src="res/1/264-75HP-Ani.mp4" type="video/mp4"> -->
-            <!-- this device does not support -->
-        </video>
-        <div style="position: absolute; left:30px; top:30px; width:25%">
-            <img style="width:100%;"src="res/L1/Group 506.png">
-        </div>
-        <div class="w3-center" style="font-size:6vmin;color:#B6FFDA;position: absolute;letter-spacing:5px;top:48%; width: 100%;">SMART BY DESIGN</div>
-        <div class="w3-center" style="font-size:6vmin;color:#B6FFDA;position: absolute;letter-spacing:5px;top:52%; width: 100%;">NEXT -LEVEL ELECTRIC</div>
-    </div>
+		<div class="w3-center" style="font-size:6vmin;color:#B6FFDA;position: absolute;letter-spacing:5px;top:50%; width: 100%;">SMART BY DESIGN</div>
+		<div class="w3-center" style="font-size:6vmin;color:#B6FFDA;position: absolute;letter-spacing:5px;top:60%; width: 100%;">NEXT -LEVEL ELECTRIC</div>
+	</div>
 
-    <div class="fs-tab disabled" id="dL2" style="background-color: black;">
-        <div class="w3-center" style="color: white;">
-            <p style="margin: 0 0 0 0; font-size: 4vmin;">VISIT OUT BOOTH TO</p>
-            <p style="margin: 0 0 0 0; font-size: 4vmin;">EXPERIENCE THE FUTURE OF ELECTRIC</p>
-        </div>
-        <div class="w3-center" style="margin: 30px 0 30px 0; width:100%; color: white;">
-
-            <img style="width:80%;"src="res/L2/Group 582.png">
-        </div>
-
-        <img style="width:100%;"src="res/L2/Group 572.png">
-        <div class="w3-center" style="position:absolute; bottom:10%; padding: 0 0 0px 0; width:100%; color: white;">
-            <img style="width:40%;"src="res/L2/Group 553(1).png">
-        </div>
-        <div class="w3-center" style="position:absolute; bottom:-5%; padding: 0 0 50px 0; width:100%; color: white;">
-            <a class="sliding-link" href="#dL6"><img style="width:40%;"src="res/L2/Group 553.png"></a>
-        </div>
-    </div>
-
-    <div class="fs-tab disabled" id="dL3" style="background-color: black;">
-        <div class="w3-center" style=" padding: 15px 0 15px 0; width:100%; color: white;">
-            <p style="margin: 0 0 0 0 ;font-size: 6vmin;">Comprehensive Intelligent</p>
-            <p style="margin: 0 0 0 0 ;font-size: 6vmin;">Electric Propulsion System</p>
-        </div>
-        <video style="width:100%;" controls src="res/L3/Full System Animation_v2.1_1080P.mp4"></video>
+	<!--
+		dL2 mobile page second card
+		first half of the black page
+	
+	-->
+	<div class="fs-tab disabled" id="dL2" style="padding: 30px 0 0 0; background-color: black;">
 
 
-        <div class="w3-center w3-row" style=" padding: 15px 0 15px 0; width:100%; color: white;">
-            <div class="w3-col s1 w3-container acelEmpty"></div>
-            <div class="w3-center w3-col s10" style="">
-                <p style="margin: 0 0 0 0 ;font-size: 3vmin;">ACEL’s comprehensive intelligent solution consists of seamlessly integrated components, including Outboard Motors, Battery System, Intelligent Power Supply, Digital Throttle, Smart Charger, Smart Key, and an Onboard Computer.</p>
-            </div>
-            <div class="w3-col s1 w3-container acelEmpty"></div>
-        </div>
+		<!--
+			boat show location card
+		-->
+		<div class="w3-center" style="position:absolute; margin: 30px 0 30px 0; width:100%; color: white;">
+			<div class="w3-center" style="color: white;">
+				<p style="margin: 20% 0 0 0; font-size: 4vmin;">VISIT OUT BOOTH TO</p>
+				<p style="margin: 0 0 5% 0; font-size: 4vmin;">EXPERIENCE THE FUTURE OF ELECTRIC</p>
+			</div>
+			<!--
+				todo booth number
+			-->
+			<img loading="lazy" style="width:70%;"src="res/L2/Group 610.png">
+		</div>
 
-    </div>
+		<img loading="lazy" style="width:100%;"src="res/L2/Group 607.png" >
+		<!-- <div class="w3-center" style="position:absolute; bottom:10%; padding: 0 0 0px 0; width:100%; color: rgb(114, 60, 60);">
+			<img loading="lazy" style="width:40%;"src="res/L2/Group 553(1).png">
+		</div> -->
+		<!-- <div class="w3-center" style="position:absolute; bottom:-5%; padding: 0 0 50px 0; width:100%; color: rgb(133, 38, 38);">
+			<a class="sliding-link" href="#dL6"><img loading="lazy" style="width:40%;"src="res/L2/Group 553.png"></a>
+		</div> -->
+	</div>
 
-    <div class="fs-tab disabled" id="dL4" style="">
-        <div class="w3-center" style=" margin: 30px 0 30px 0; width:100%; color: black;">
-            <p style="font-size: 8vmin;">Now Available</p>
-        </div>
-        <div class="" style="width: 100%;   overflow-x: scroll; overflow-y: hidden; white-space: nowrap; margin: 30px 0 0 0">
-            <div class="" style="width:50%;display: inline-block;"><img style="width:100%;"src="res/L4/Group 575.png"></div>
-            <div class="" style="width:50%;display: inline-block;"><img style="width:100%;"src="res/L4/Group 576.png"></div>
-            <div class="" style="width:50%;display: inline-block;"><img style="width:100%;"src="res/L4/Group 577.png"></div>
-            <div class="" style="width:50%;display: inline-block;"><img style="width:100%;"src="res/L4/Group 578.png"></div>
-        </div>
-        <div id="orderbtn-L4" class="w3-center" style=" margin: 30px 0 30px 0; width:100%; color: white;">
-            <img style="width:50%;"src="res/L4/Group 566-2.png">
-        </div>
-
-    </div>
-
-    <div class="fs-tab disabled" id="dL5" style="background-color: rgb(0, 0, 0);">
-
-        <div class="w3-center" style=" padding: 30px 0 15px 0; width:100%; color: white;">
-            <p style="margin: 0 0 0 0 ;font-size: 6vmin;"><b>Exceptional Features.</b> </p>
-            <p style="margin: 0 0 0 0 ;font-size: 6vmin;"><b>Superior Performance</b></p>
-        </div>
-        <div class="w3-center" style=" margin: 30px 0 10px 0; width:100%; color: white;">
-            <img style="width:80%;"src="res/L5/75HP outboard_2 1.png">
-        </div>
-        <div class="w3-center w3-row" style=" padding: 0px 0 15px 0; width:100%; color: white;">
-            <div class="w3-col s1 w3-container acelEmpty"></div>
-            <div class="w3-center w3-col s10" style="">
-                <p class="w3-left-align" style="margin: 10px 0 10px 0 ;font-size: 4.5vmin;"><b>95.8% Power Train Efficiency.</b> </p>
-                <p class="w3-left-align" style="margin: 0 0 0 0 ;font-size: 3vmin;">ACEL boasts of 95.8% powertrain efficiency. This is achieved through meticulous engineering, utilization of high-quality components, and the seamless integration of advanced technologies, ensuring minimal energy loss and optimal performance. </p>
-            </div>
-            <div class="w3-col s1 w3-container acelEmpty"></div>
-        </div>
-
-        <div class="w3-center" style=" margin: 30px 0 10px 0; width:100%; color: white;">
-            <img style="width:80%;"src="res/L5/battery-500x1000-1 1.png">
-        </div>
-        <div class="w3-center w3-row" style=" padding: 0px 0 15px 0; width:100%; color: white;">
-            <div class="w3-col s1 w3-container acelEmpty"></div>
-            <div class="w3-center w3-col s10" style="">
-                <p class="w3-left-align" style="margin: 10px 0 10px 0 ;font-size: 4.5vmin;"><b>Patented Technology. Hybrid Integration </b></p>
-                <p class="w3-left-align" style="margin: 0 0 0 0 ;font-size: 3vmin;">Our patented technology allows stacking and customization of battery packs, allowing for various applications. Our system can also seamlessly link to any secondary power source, establishing a hybrid system on the go.</p>
-            </div>
-            <div class="w3-col s1 w3-container acelEmpty"></div>
-        </div>
+	<!--
+		dL3 mobile page third card
+		second video
+	-->
+	<div class="fs-tab disabled" id="dL3" style="background-color: black;">
 
 
-        <div class="w3-center" style=" margin: 30px 0 10px 0; width:100%; color: white;">
-            <img style="width:80%;"src="res/L5/vcu-front 3.png">
-        </div>
-        <div class="w3-center w3-row" style=" padding: 0px 0 15px 0; width:100%; color: white;">
-            <div class="w3-col s1 w3-container acelEmpty"></div>
-            <div class="w3-center w3-col s10" style="">
-                <p class="w3-left-align" style="margin: 10px 0 10px 0 ;font-size: 4.5vmin;"><b>Software-Enabled Integration.</b> </p>
-                <p class="w3-left-align" style="margin: 0 0 0 0 ;font-size: 3vmin;">The Onboard Computer comes wih  an intuitive touch screen and is equipped with proprietary AI software, Wi-Fi, Bluetooth, and LTE. Features like over-the-air notifications, and predictive & remote monitoring enhance convenience and performance. </p>
-            </div>
-            <div class="w3-col s1 w3-container acelEmpty"></div>
-        </div>
+		<div class="w3-center" style=" padding: 15px 0 15px 0; width:100%; color: white;">
+			<p style="margin: 0 0 0 0 ;font-size: 6vmin;">Comprehensive Intelligent</p>
+			<p style="margin: 0 0 0 0 ;font-size: 6vmin;">Electric Propulsion System</p>
+		</div>
+		<video style="width:100%;" controls preload="none" src="res/L3/Full System Animation_v2.1_1080P.mp4"></video>
 
 
-        <div id="btn-L5" class="w3-center" style=" padding: 30px 0 30px 0; width:100%; color: white;">
-            <img style="width:50%;"src="res/L5/Group 574.png">
-        </div>
+		<div class="w3-center w3-row" style=" padding: 15px 0 15px 0; width:100%; color: white;">
+			<div class="w3-col s1 w3-container acelEmpty"></div>
+			<div class="w3-center w3-col s10" style="">
+				<p style="margin: 0 0 0 0 ;font-size: 3vmin;">ACEL’s comprehensive intelligent solution consists of seamlessly integrated components, including Outboard Motors, Battery System, Intelligent Power Supply, Digital Throttle, Smart Charger, Smart Key, and an Onboard Computer.</p>
+			</div>
+			<div class="w3-col s1 w3-container acelEmpty"></div>
+		</div>
 
-    </div>
+	</div>
 
-    <div class="fs-tab disabled" id="dL6" style="background-color: white;">
-        <img style="width:100%;"src="res/L6/Group 610.png">
 
-    </div>
+	<!--
+		dL4 mobile page forth card
+		4 scroll model and order btn
+	-->
+	<div class="fs-tab disabled" id="dL4" style="">
+		<div class="w3-center" style=" margin: 30px 0 30px 0; width:100%; color: black;">
+			<p style="font-size: 8vmin;margin: 0 0 0 0;">Now Available</p>
+		</div>
+		<div id ="scrollContent-L4" class="" style="height:400px; width: 100%; overflow-x: scroll; overflow-y: hidden; white-space: nowrap; margin: 0 0 0 0;">
+			<div class="l4-1" style=" width:50%; display: inline-block; height:100% ;position:relative"><img loading="lazy" style="position:absolute;bottom:0; left:12.5%; width:75%;"src="res/L4/IE50.png"></div>
+			<div class="l4-2" style=" width:50%; display: inline-block; height:100% ;position:relative"><img loading="lazy" style="position:absolute;bottom:0; left:12.5%; width:75%;"src="res/L4/IE75.png"></div>
+			<div class="l4-3" style=" width:50%; display: inline-block; height:100% ;position:relative"><img loading="lazy" style="position:absolute;bottom:0; width:100%;"src="res/L4/IE150.png"></div>
+			<div class="l4-4" style=" width:50%; display: inline-block; height:100% ;position:relative"><img loading="lazy" style="position:absolute;bottom:0; width:100%;"src="res/L4/IE250.png"></div>
+		</div>
+		<div id="orderbtn-L4" class="w3-center" style=" margin: 30px 0 30px 0; width:100%; color: white;">
+			<img loading="lazy" style="width:50%;"src="res/L4/Group 566-2.png">
+		</div>
+	</div>
 
-    <div class="fs-tab disabled" id="dL7" style="background-color: black;">
-        <div class="w3-center w3-row" style=" padding: 30px 0 15px 0; width:100%;" >
-            <div class="w3-col s1 w3-container acelEmpty"></div>
-            <div class="w3-center w3-col s10" style="position: relative;">
 
-                <img style="width:100%;"src="res/L7/Group 580.png">
+	<!--
+		dL5 mobile page fifth card
+		three main selling point
+	-->
+	<div class="fs-tab disabled" id="dL5" >
 
-                <div id="cta-L7-1" style="width:100%;position: absolute; top: 40%;">
-                    <img style="width:60%;"src="res/L7/Group 570.png">
-                </div>
+		<div class="w3-center" style=" padding: 30px 0 15px 0; width:100%; color: rgb(0, 0, 0);">
+			<p style="margin: 0 0 0 0 ;font-size: 7vmin;"><b>Exceptional Features.</b> </p>
+			<p style="margin: 0 0 0 0 ;font-size: 7vmin;"><b>Superior Performance</b></p>
+		</div>
+		<div class="w3-center" style=" margin: 30px 0 10px 0; width:100%; color: rgb(0, 0, 0);">
+			<img loading="lazy" style="width:80%;"src="res/L5/75HP outboard_2 1.png">
+		</div>
+		<div class="w3-center w3-row" style=" padding: 0px 0 15px 0; width:100%; color: rgb(0, 0, 0);">
+			<div class="w3-col s1 w3-container acelEmpty"></div>
+			<div class="w3-center w3-col s10" style="">
+				<p class="w3-left-align" style="margin: 10px 0 10px 0 ;font-size: 4.5vmin;"><b>95.8% Power Train Efficiency.</b> </p>
+				<p class="w3-left-align" style="margin: 0 0 0 0 ;font-size: 3vmin;">ACEL boasts of 95.8% powertrain efficiency. This is achieved through meticulous engineering, utilization of high-quality components, and the seamless integration of advanced technologies, ensuring minimal energy loss and optimal performance. </p>
+			</div>
+			<div class="w3-col s1 w3-container acelEmpty"></div>
+		</div>
 
-                <img style="margin-top:30px; width:100%;"src="res/L7/Group 579.png">
+		<div class="w3-center" style=" margin: 30px 0 10px 0; width:100%; color: rgb(0, 0, 0);">
+			<img loading="lazy" style="width:80%;"src="res/L5/battery-500x1000-1 1.png">
+		</div>
+		<div class="w3-center w3-row" style=" padding: 0px 0 15px 0; width:100%; color: rgb(0, 0, 0);">
+			<div class="w3-col s1 w3-container acelEmpty"></div>
+			<div class="w3-center w3-col s10" style="">
+				<p class="w3-left-align" style="margin: 10px 0 10px 0 ;font-size: 4.5vmin;"><b>Patented Technology. Hybrid Integration </b></p>
+				<p class="w3-left-align" style="margin: 0 0 0 0 ;font-size: 3vmin;">Our patented technology allows stacking and customization of battery packs, allowing for various applications. Our system can also seamlessly link to any secondary power source, establishing a hybrid system on the go.</p>
+			</div>
+			<div class="w3-col s1 w3-container acelEmpty"></div>
+		</div>
 
-                <div id="cta-L7-2" style="width:100%; position: absolute; top: 92%;"> 
-                    <img style="width:60%;"src="res/L7/Group 586.png">
-                </div>
-                
-            </div>
-            <div class="w3-col s1 w3-container acelEmpty"></div>
-        </div>
-        <div class="w3-center" style="width: 100%; padding: 30px 0 30px 0;">
-            <img style="width: 43%;" src="res/L7/Group 532.png">
-        </div>
-    </div>
 
-    <div id="loading" style="position: fixed; top:0;z-index:8; height:100%;width:100%; background-color: black;">
-        <img id="loading-ani" src="res/L0/loading.gif">
-    </div>
+		<div class="w3-center" style=" margin: 30px 0 10px 0; width:100%; color: rgb(0, 0, 0);">
+			<img loading="lazy" style="width:80%;"src="res/L5/HMI-0607-V1.png">
+		</div>
+		<div class="w3-center w3-row" style=" padding: 0px 0 15px 0; width:100%; color: rgb(0, 0, 0);">
+			<div class="w3-col s1 w3-container acelEmpty"></div>
+			<div class="w3-center w3-col s10" style="">
+				<p class="w3-left-align" style="margin: 10px 0 10px 0 ;font-size: 4.5vmin;"><b>Software-Enabled Integration.</b> </p>
+				<p class="w3-left-align" style="margin: 0 0 0 0 ;font-size: 3vmin;">The Onboard Computer comes wih an intuitive touch screen and is equipped with proprietary AI software, Wi-Fi, Bluetooth, and LTE. Features like over-the-air notifications, and predictive & remote monitoring enhance convenience and performance. </p>
+			</div>
+			<div class="w3-col s1 w3-container acelEmpty"></div>
+		</div>
 
-    
+		<!--
+			learm more btn -> to acelpower.com
+		--> 
+		<div id="btn-L5" class="w3-center" style=" padding: 30px 0 30px 0; width:100%; color: white;">
+			<img loading="lazy" style="width:50%;"src="res/L5/Group 574.png">
+		</div>
 
-    <!-- info@acelpower.com
-    + 604-424-8228 -->
+	</div>
 
-<!-- <img src="res/acel_bg.png" style="max-width: 150%;"> -->
+	<!--
+		dL6 mobile page sixth card
+		spec
+	-->
+	<div class="fs-tab disabled" id="dL6" style="background-color: white;">
+		<img loading="lazy" style="width:100%;"src="res/L6/specs section.png">
+
+	</div>
+
+	<!--
+		dL7 mobile page sixth card
+		spec
+	-->
+	<div class="fs-tab disabled" id="dL7" style="background-color: black;">
+		<div class="w3-center w3-row" style=" padding: 30px 0 15px 0; width:100%;" >
+			<div class="w3-col s1 w3-container acelEmpty"></div>
+			<div class="w3-center w3-col s10" style="position: relative;">
+
+				<img loading="lazy" style="width:100%;"src="res/L7/Group 580.png">
+
+				<!--
+					CTA:Learn more
+				-->
+				<div id="cta-L7-1" style="width:100%;position: absolute; top: 40%;">
+					<img loading="lazy" style="width:60%;"src="res/L7/Group 570.png">
+				</div>
+
+				<img loading="lazy" style="margin-top:30px; width:100%;"src="res/L7/Group 579.png">
+
+				<!--
+					CTA:Invest in ACEL Today!
+				-->
+				<div id="cta-L7-2" style="width:100%; position: absolute; top: 92%;"> 
+					<img loading="lazy" style="width:60%;"src="res/L7/Group 586.png">
+				</div>
+				
+			</div>
+			<div class="w3-col s1 w3-container acelEmpty"></div>
+		</div>
+		<div class="w3-center" style="width: 100%; padding: 30px 0 30px 0;">
+			<img loading="lazy" style="width: 43%;" src="res/L7/Group 532.png">
+		</div>
+	</div>
+
+	<div id="loading" style="position: fixed; top:0;z-index:8; height:100%;width:100%; background-color: black;">
+		<img loading="lazy" id="loading-ani" src="res/L0/loading.gif">
+	</div>
+
+	
+
+	<!-- info@acelpower.com
+	+ 604-424-8228 -->
+
+<!-- <img loading="lazy" src="res/acel_bg.png" style="max-width: 150%;"> -->
 <!-- <a href="https://acelpower.com">link</a> -->
 
 </body>

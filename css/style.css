@@ -85,10 +85,28 @@ body {
 
 
 #d5 {
-    background-color: black;
+    background: url("../res/5/Rectangle\ 710.png");
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
 }
 
-#orderbtn:hover {
+#orderbtn-4:hover {
+    background-color: white !important;
+    color: black !important;
+    box-shadow: 5px 5px 2px lightblue;
+}
+#btn-5:hover {
+    background-color: white !important;
+    color: black !important;
+    box-shadow: 5px 5px 2px lightblue;
+}
+#cta-7-1:hover {
+    background-color: white !important;
+    color: black !important;
+    box-shadow: 5px 5px 2px lightblue;
+}
+
+#cta-7-2:hover {
     background-color: white !important;
     color: black !important;
     box-shadow: 5px 5px 2px lightblue;
@@ -96,25 +114,25 @@ body {
 
 #d6btn50:hover {
     background-color: white !important;
-    color: black !important;
+    color: rgb(03,44,42) !important;
     box-shadow: 5px 5px 2px lightblue;
 }
 
 #d6btn75:hover {
     background-color: white !important;
-    color: black !important;
+    color: rgb(03,44,42) !important;
     box-shadow: 5px 5px 2px lightblue;
 }
 
 #d6btn150:hover {
     background-color: white !important;
-    color: black !important;
+    color: #034442 !important;
     box-shadow: 5px 5px 2px lightblue;
 }
 
 #d6btn250:hover {
     background-color: white !important;
-    color: black !important;
+    color: rgb(03,44,42) !important;
     box-shadow: 5px 5px 2px lightblue;
 }
 #d2 {
@@ -124,9 +142,15 @@ body {
     background-color: black !important;
 }
 
-#dl4 {
+/* #dL4 {
     background: url("../res/L4/Rectangle\ 704.png");
     background-size: 100% 100% auto;
+    background-repeat: no-repeat;
+} */
+
+#dL5 {
+    background: url("../res/L5/Rectangle\ 734.png");
+    background-size: 100% 100% ;
     background-repeat: no-repeat;
 }
 
@@ -183,6 +207,11 @@ a:hover {
 
 .acelEmpty {
     min-height: 1px;
+}
+
+.acel-dark-green{
+    background-color: #034442;
+    color: #ffffff;
 }
 
 

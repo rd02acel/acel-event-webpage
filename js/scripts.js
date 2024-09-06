@@ -5,6 +5,8 @@ $(document).ready(function(){
         event.preventDefault();
     });
 
+    
+
     var id = null;
     id = setTimeout(() => {
         console.log("stop loading animation if it takes too long");
@@ -17,7 +19,41 @@ $(document).ready(function(){
         if(id != null){
             clearTimeout(id);
         }
+
+        // var dl4 = $("#dL4");
+        // var l4scroll = $("#scrollContent-L4");
+        // console.log("AAA:"+dl4.width());
+        // console.log("AAA:"+l4scroll.width());
+        // // l4scroll[0].scrollIntoView({ inline: 'center' });
+        // l4scroll.animate({scrollLeft:"200%"},1000);
+
     });
+
+    setTimeout(
+        ()=>{
+            console.log("BBBB:"+$( window ).height())
+            var isFirst = true;
+            var l4scroll = $("#scrollContent-L4");
+            var dl4 = $("#dL4")
+            var offset = $( window ).height() - dl4.height();
+            var dl4pos = dl4.offset().top - offset;
+            window.addEventListener("scroll",(event) =>{
+                // console.log("AAA:"+window.scrollY)
+                // console.log("AAAA:"+dl4pos)
+                if (window.scrollY >= dl4pos && isFirst) {
+                    l4scroll.animate({scrollLeft:""+$( window ).width()/2+"px"},1000);
+                    isFirst = false;
+                 }
+            });
+    
+            resizeL4();
+        },1000
+    );
+
+    function resizeL4(){
+        console.log("DDDD:"+""+$(".l4-4 > img").height()+"px");
+        $("#scrollContent-L4").animate({height:""+$(".l4-4 > img").height()+"px"},10);
+    }
 
 
     // $( window ).on( "load", function() {
@@ -31,6 +67,7 @@ $(document).ready(function(){
 
     $( window ).on( "resize", function() {
         rotatecheat();
+        resizeL4();
       } );
     rotatecheat();
 
@@ -111,7 +148,7 @@ $(document).ready(function(){
 
 
     
-    $("#orderbtn").click(function(event){
+    $("#orderbtn-4").click(function(event){
         event.preventDefault();
         var email = 'stephen.p@acelpower.com';
         var subject = 'Boat Inquires';
@@ -182,42 +219,42 @@ $(document).ready(function(){
         event.preventDefault();
         resetcolor();
         $(this).removeClass('w3-black');
-        $(this).addClass('w3-teal');
-        $("#d6specPic").attr('src',"res/6/Group 596.png");
-        $("#d6enginePic").attr('src',"res/6/Group 547.png");
+        $(this).addClass('acel-dark-green');
+        $("#d6specPic").attr('src',"res/6/50hpspecs.png");
+        $("#d6enginePic").attr('src',"res/6/50hpv2.png");
     });
 
     $("#d6btn75").click(function(event){
         event.preventDefault();
         resetcolor();
         $(this).removeClass('w3-black');
-        $(this).addClass('w3-teal'); 
-        $("#d6specPic").attr('src',"res/6/Group 598.png");
-        $("#d6enginePic").attr('src',"res/6/Group 547.png");
+        $(this).addClass('acel-dark-green'); 
+        $("#d6specPic").attr('src',"res/6/75hpspecs.png");
+        $("#d6enginePic").attr('src',"res/6/75hpv2.png");
     });
 
     $("#d6btn150").click(function(event){
         event.preventDefault();
         resetcolor();
         $(this).removeClass('w3-black');
-        $(this).addClass('w3-teal');
-        $("#d6specPic").attr('src',"res/6/Group 605.png");
-        $("#d6enginePic").attr('src',"res/6/Group 548.png");
+        $(this).addClass('acel-dark-green');
+        $("#d6specPic").attr('src',"res/6/150hpspecs.png");
+        $("#d6enginePic").attr('src',"res/6/150hpv2.png");
     });
 
     $("#d6btn250").click(function(event){
         event.preventDefault();
         resetcolor();
         $(this).removeClass('w3-black');
-        $(this).addClass('w3-teal'); 
-        $("#d6specPic").attr('src',"res/6/Group 604.png");
-        $("#d6enginePic").attr('src',"res/6/Group 548.png");
+        $(this).addClass('acel-dark-green'); 
+        $("#d6specPic").attr('src',"res/6/250hpspecs.png");
+        $("#d6enginePic").attr('src',"res/6/250hpv2.png");
     });
 
 
     function resetcolor(){
         $('div[id ^= "d6btn"]').each(function(){
-            $(this).removeClass('w3-teal');
+            $(this).removeClass('acel-dark-green');
             $(this).addClass('w3-black');
         });
     }
